@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT biến, kiểu dữ liệu và toán tử</title>
+</head>
+<body>
+<h2>Bài 1 - Tính điểm môn học</h2>
+<button type="button" onclick="tinhDiem()">Ấn vào để nhập điểm</button>
+<script>
+    function tinhDiem() {
+        let vatLy = +prompt("Nhập điểm Vật Lý ");
+        let hoaHoc = +prompt("Nhập điểm Hóa Học ");
+        let sinhHoc = +prompt('Nhập điểm Sinh Học');
+        let tong = vatLy + hoaHoc + sinhHoc ;
+        let diemTrungBinh = tong/3;
+        alert("Tổng điểm là " + tong);
+        alert("Điểm trung bình là " + diemTrungBinh);
+    }
+</script>
+<h2>Bài 2 - Chuyển đổi độ C sang độ F</h2>
+<button type="button" onclick="chuyenDo()">Ấn vào để nhập độ C</button>
+<script>
+    function chuyenDo() {
+        let doC = +prompt("Nhập độ C: ");
+        let doF = 9 * doC / 5 + 32;
+        alert(doC + " độ C thì bằng " + doF + " độ F");
+    }
+</script>
+<h2>Bài 3 - Tính diện tích hình tròn</h2>
+<button type="button" onclick="dienTich()">Ấn vào để nhập bán kính hình tròn</button>
+<script>
+    function dienTich() {
+        let r = +prompt("Nhập vào bán kính hình tròn ");
+        let S = r * r * 3.14;
+        alert('Diện tích hình tròn là ' +S);
+    }
+</script>
+<h2>Bài 4 - Tính chu vi hình tròn</h2>
+<button type="button" onclick="chuVi()">Ấn vào đây để nhập đường kính hình tròn</button>
+<script>
+    function chuVi() {
+        let d = +prompt("Nhập vào đường kính hình tròn ");
+        let C = d * 3.14;
+        alert("Chu vi hình tròn là " + C);
+    }
+</script>
+</body>
+</html>

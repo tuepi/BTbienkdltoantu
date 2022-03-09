@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<form>
+    <input type="number" name="nummber" id="n1">
+    <input type="number" name="nummber" id="n2">
+    <br><br>
+    <button type="button" onclick="cong()">Addition(+)</button>
+    <button type="button" onclick="tru()">Subtraction(-)</button>
+    <button type="button" onclick="nhan()">Multiplication(x)</button>
+    <button type="button" onclick="chia()">Division(/)</button>
+</form>
+<script>
+    function cong() {
+        let a = document.getElementById("n1").value;
+        let b = document.getElementById("n2").value;
+        let t = +a + +b;
+        alert("Kết quả phép tính là " + t);
+    }
+    function tru() {
+        let a = document.getElementById("n1").value;
+        let b = document.getElementById("n2").value;
+        let h = a - b;
+        alert("Kết quả phép tính là " + h);
+    }
+    function nhan() {
+        let a = document.getElementById("n1").value;
+        let b = document.getElementById("n2").value;
+        let ti = a * b;
+        alert("Kết quả phép tính là " + ti);
+    }
+    function chia() {
+        let a = document.getElementById("n1").value;
+        let b = document.getElementById("n2").value;
+        let th = a / b;
+        alert("Kết quả phép tính là " + th);
+    }
+</script>
+</body>
+</html>
